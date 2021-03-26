@@ -34,6 +34,16 @@ button {
   flex-grow: 1;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -71,6 +81,10 @@ button {
 }
 
 /* New Task */
+.new-task {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
 .new-task__input {
   width: 318px;
 }
@@ -85,6 +99,7 @@ button {
 }
 
 .new-task__row {
+  margin-block-start: 1em;
   display: flex;
 }
 
